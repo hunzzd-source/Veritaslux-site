@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VeritasLux</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="sky" class="scene">
+    <h1>Look to the heavens...</h1>
+  </div>
+  <div id="fall" class="scene hidden">
+    <img src="assets/blood_texture_web.jpg" alt="Falling into the unknown" />
+  </div>
+  <div id="gate" class="scene hidden">
+    <h2>You Have Been Chosen</h2>
+    <p>To proceed, enter the sacred cipher:</p>
+    <input type="password" id="password" placeholder="Enter password..." />
+    <button onclick="checkPassword()">Enter</button>
+    <div id="cta" class="hidden">
+      <h2>Welcome to the Inner Sanctum</h2>
+      <p>Claim your artifact of unimaginable worth...</p>
+    </div>
+  </div>
+  <audio id="sky-audio" src="assets/audio_sky.mp3" preload="auto"></audio>
+  <audio id="fall-audio" src="assets/audio_fall.mp3" preload="auto"></audio>
+  <audio id="gate-audio" src="assets/audio_gate.mp3" preload="auto"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
